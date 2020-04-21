@@ -1,4 +1,14 @@
-const { text, below, textBox, $, hover, click } = require('taiko');
+const {
+  text,
+  below,
+  textBox,
+  $,
+  hover,
+  click,
+  checkBox,
+  near,
+  evaluate,
+} = require('taiko');
 const assert = require('assert');
 
 async function todoExists(todoName) {
@@ -39,4 +49,12 @@ step('Il y a <count> todo dans la liste', async (count) => {
     (await $('.todo-list li').elements()).length,
     parseInt(count),
   );
+});
+
+step('Je clique sur la checkbox de la todo <todoName>', async (todoName) => {
+  await click(checkBox(near(todoName)));
+});
+
+step('La todo <todoName> est validée', async (todoName) => {
+  assert.equal(await $('.completed').text(), todoName);
 });

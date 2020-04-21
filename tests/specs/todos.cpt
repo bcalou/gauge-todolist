@@ -1,0 +1,5 @@
+# Je créé une todo <todo_name>
+
+* J'ouvre la page "Todos"
+* Je tape <todo_name> dans l'input "What needs to be done?"
+* J'appuie sur la touche "Enter"
