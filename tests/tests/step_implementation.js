@@ -20,6 +20,6 @@ afterSuite(async () => {
   await closeBrowser();
 });
 
-gauge.screenshotFn = async function () {
-  return await screenshot({ encoding: 'base64' });
-};
+// gauge.screenshotFn = async function () {
+//   return await screenshot({ encoding: 'base64' });
+// };
