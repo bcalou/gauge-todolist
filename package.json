@@ -21,10 +21,11 @@
     "serve": "^10.0.2"
   },
   "scripts": {
+    "postinstall": "cd tests && npm install",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "gauge run tests/specs",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
