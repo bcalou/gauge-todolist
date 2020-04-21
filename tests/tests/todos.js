@@ -7,7 +7,6 @@ const {
   click,
   checkBox,
   near,
-  evaluate,
 } = require('taiko');
 const assert = require('assert');
 
