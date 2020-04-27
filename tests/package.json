@@ -6,7 +6,9 @@
     "test": "gauge run specs/"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "taiko": "latest",
-    "taiko-storage": "0.0.2"
+    "taiko-storage": "0.0.2",
+    "taiko-accessibility": "^0.3.0"
   }
 }

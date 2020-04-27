@@ -26,6 +26,7 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "cd tests && gauge run specs",
+    "test:a11y": "cd tests && gauge run specs/a11y",
     "test:failed": "cd tests && gauge run --failed",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
