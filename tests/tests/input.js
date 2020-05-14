@@ -1,4 +1,4 @@
-const { write, textBox, press, checkBox, click } = require('taiko');
+const { write, textBox, press, checkBox, click, text } = require('taiko');
 
 step(
   "Je tape <value> dans l'input <placeholder>",
@@ -13,4 +13,8 @@ step("J'appuie sur la touche <key>", async (key) => {
 
 step('Je clique sur la checkbox <id>', async (id) => {
   await click(checkBox({ id }));
+});
+
+step('Je clique sur <textContent>', async (textContent) => {
+  await click(text(textContent));
 });

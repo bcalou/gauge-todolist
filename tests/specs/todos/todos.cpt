@@ -2,3 +2,14 @@
 
 * Je tape <todo_name> dans l'input "What needs to be done?"
 * J'appuie sur la touche "Enter"
+
+# Je crée et valide une todo <todo_name>
+
+* Je crée une todo <todo_name>
+* Je clique sur la checkbox de la todo <todo_name>
+
+# La todo <todo_name> est la seule dans la liste
+
+* Il y a "1" todos dans la liste
+* La todo <todo_name> fait partie de la liste des todos
+

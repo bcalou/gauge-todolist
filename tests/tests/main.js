@@ -1,18 +1,10 @@
 /* globals gauge*/
 'use strict';
-const {
-  openBrowser,
-  closeBrowser,
-  storage: { localStorage },
-} = require('taiko');
+const { openBrowser, closeBrowser } = require('taiko');
 const headless = process.env.headless_chrome.toLowerCase() === 'true';
 
 beforeSuite(async () => {
-  await openBrowser({ headless: headless });
-});
-
-afterScenario(async () => {
-  await localStorage.clear();
+  await openBrowser({ headless: headless, args: ['--window-size=1440,900'] });
 });
 
 afterSuite(async () => {
