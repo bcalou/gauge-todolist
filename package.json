@@ -28,6 +28,7 @@
     "test": "cd tests && gauge run specs",
     "test:a11y": "cd tests && gauge run specs/a11y",
     "test:failed": "cd tests && gauge run --failed",
+    "k6": "k6 run k6/k6.js -e SITE_URL=http://localhost:3000 --vus 10 --duration 30s",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

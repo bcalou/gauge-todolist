@@ -16,3 +16,13 @@ Then you can run the tests :
 ```
 npm run test
 ```
+
+## k6 load testing
+
+Follow the instructions to install [k6](https://k6.io/docs/getting-started/installation).
+
+Then you can run the tests :
+
+```
+npm run k6
+```
